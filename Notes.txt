@@ -1,0 +1,18 @@
+npm install -g yo bower grunt-cli gulp
+npm install -g generator-aspnet
+yo aspnet
+
+dotnet restore
+dotnet build
+dotnet run
+
+dotnet ef dbcontext scaffold "Server=mauidell;Database=SSWUGDemo;User Id=devuser;Password=devuser;" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models 
+
+docker stop sample
+docker rm sample
+docker build -t sample .
+docker run -d -p 81:5000 --name sample sample
+docker ps
+docker logs <instance id>
+
+docker attach --sig-proxy=false sample
