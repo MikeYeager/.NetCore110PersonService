@@ -16,3 +16,6 @@ docker ps
 docker logs <instance id>
 
 docker attach --sig-proxy=false sample
+
+git remote add origin https://...
+git push -u -f origin master
