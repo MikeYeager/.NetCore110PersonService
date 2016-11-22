@@ -1,41 +1,18 @@
-# Welcome to ASP.NET Core
+# .NET Core 1.1.X Person Service
 
-We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
-
-You've created a new ASP.NET Core project. [Learn what's new](https://go.microsoft.com/fwlink/?LinkId=518016)
+This source code goes along with the "Getting Your Head Around Modern Web for ASP.NET Developers" training session.
 
 ## This application consists of:
 
-*   Sample pages using ASP.NET Core MVC
-*   [Bower](https://go.microsoft.com/fwlink/?LinkId=518004) for managing client-side libraries
-*   Theming using [Bootstrap](https://go.microsoft.com/fwlink/?LinkID=398939)
+Person micro-service using .NET Core, ASP.NET Core MVC and Entity Framework Core. Service calls include:
 
-## How to
+*   Get(string searcString) - retrieves a list of all people where the person's first name, last name, email or phone number begins with the search string.
+*   Get(Guid id) - retrieves all data for a particular person
+*   Post(Person personToSave) - save changes to a person
+*   GetCountWhereEmailContains(string emailDomain) - retrieves a count of people whose email address contains the search string
 
-*   [Add a Controller and View](https://go.microsoft.com/fwlink/?LinkID=398600)
-*   [Add an appsetting in config and access it in app.](https://go.microsoft.com/fwlink/?LinkID=699562)
-*   [Manage User Secrets using Secret Manager.](https://go.microsoft.com/fwlink/?LinkId=699315)
-*   [Use logging to log a message.](https://go.microsoft.com/fwlink/?LinkId=699316)
-*   [Add packages using NuGet.](https://go.microsoft.com/fwlink/?LinkId=699317)
-*   [Add client packages using Bower.](https://go.microsoft.com/fwlink/?LinkId=699318)
-*   [Target development, staging or production environment.](https://go.microsoft.com/fwlink/?LinkId=699319)
 
-## Overview
+## For more information about the training session:
 
-*   [Conceptual overview of what is ASP.NET Core](https://go.microsoft.com/fwlink/?LinkId=518008)
-*   [Fundamentals of ASP.NET Core such as Startup and middleware.](https://go.microsoft.com/fwlink/?LinkId=699320)
-*   [Working with Data](https://go.microsoft.com/fwlink/?LinkId=398602)
-*   [Security](https://go.microsoft.com/fwlink/?LinkId=398603)
-*   [Client side development](https://go.microsoft.com/fwlink/?LinkID=699321)
-*   [Develop on different platforms](https://go.microsoft.com/fwlink/?LinkID=699322)
-*   [Read more on the documentation site](https://go.microsoft.com/fwlink/?LinkID=699323)
-
-## Run & Deploy
-
-*   [Run your app](https://go.microsoft.com/fwlink/?LinkID=517851)
-*   [Run tools such as EF migrations and more](https://go.microsoft.com/fwlink/?LinkID=517853)
-*   [Publish to Microsoft Azure Web Apps](https://go.microsoft.com/fwlink/?LinkID=398609)
-
-We would love to hear your [feedback](https://go.microsoft.com/fwlink/?LinkId=518015)
-"# .NetCore110PersonService" 
-"# .NetCore110PersonService" 
+*   [Getting Your Head Around Modern Web](http://www.codemag.com/Training/Detail/072a18e7-9c0d-4124-914e-e577978680b8)
+*   [CODE Training](http://www.codemag.com/Training)
